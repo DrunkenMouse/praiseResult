@@ -15,6 +15,8 @@
 		16E943531DF7F7A20073DFA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16E943511DF7F7A20073DFA4 /* LaunchScreen.storyboard */; };
 		16E9435E1DF7F7A20073DFA4 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E9435D1DF7F7A20073DFA4 /* ____Tests.m */; };
 		16E943691DF7F7A20073DFA4 /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E943681DF7F7A20073DFA4 /* ____UITests.m */; };
+		16E943781DF7F7D60073DFA4 /* LikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E943771DF7F7D60073DFA4 /* LikeView.m */; };
+		16E9437B1DF7F7E50073DFA4 /* LikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E9437A1DF7F7E50073DFA4 /* LikeButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		16E943641DF7F7A20073DFA4 /* 点赞效果UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "点赞效果UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16E943681DF7F7A20073DFA4 /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		16E9436A1DF7F7A20073DFA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16E943761DF7F7D60073DFA4 /* LikeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeView.h; sourceTree = "<group>"; };
+		16E943771DF7F7D60073DFA4 /* LikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeView.m; sourceTree = "<group>"; };
+		16E943791DF7F7E50073DFA4 /* LikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LikeButton.h; sourceTree = "<group>"; };
+		16E9437A1DF7F7E50073DFA4 /* LikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LikeButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				16E943511DF7F7A20073DFA4 /* LaunchScreen.storyboard */,
 				16E943541DF7F7A20073DFA4 /* Info.plist */,
 				16E943431DF7F7A10073DFA4 /* Supporting Files */,
+				16E943761DF7F7D60073DFA4 /* LikeView.h */,
+				16E943771DF7F7D60073DFA4 /* LikeView.m */,
+				16E943791DF7F7E50073DFA4 /* LikeButton.h */,
+				16E9437A1DF7F7E50073DFA4 /* LikeButton.m */,
 			);
 			path = "点赞效果";
 			sourceTree = "<group>";
@@ -274,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				16E9434B1DF7F7A10073DFA4 /* ViewController.m in Sources */,
+				16E9437B1DF7F7E50073DFA4 /* LikeButton.m in Sources */,
+				16E943781DF7F7D60073DFA4 /* LikeView.m in Sources */,
 				16E943481DF7F7A10073DFA4 /* AppDelegate.m in Sources */,
 				16E943451DF7F7A10073DFA4 /* main.m in Sources */,
 			);

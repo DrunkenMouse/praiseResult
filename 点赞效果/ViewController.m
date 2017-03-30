@@ -7,22 +7,44 @@
 //
 
 #import "ViewController.h"
+#import "LikeButton.h"
 
 @interface ViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    
+    IBOutlet LikeButton *_likeButton;
+    IBOutlet UILabel *_label;
+    BOOL _selected;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _likeButton.particleImage = [UIImage imageNamed:@"3.png"];
+    _likeButton.particleScale = 0.05;
+    _likeButton.particleScaleRange = 0.02;
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)clickLike:(id)sender {
+    
+    
+    _selected = !_selected;
+    if (_selected) {
+        [_likeButton popOutsideWithDuration:0.5];
+        [_likeButton setImage:[UIImage imageNamed:@"1"] forState:UIControlStateNormal];
+        [_likeButton animate];
+        _label.text = @"已赞";
+    }else {
+        [_likeButton popInSideWithDuration:0.4];
+        [_likeButton setImage:[UIImage imageNamed:@"2"] forState:UIControlStateNormal];
+        _label.text = @"赞";
+    }
+    
 }
 
 
